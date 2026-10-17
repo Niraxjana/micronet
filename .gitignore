@@ -1,0 +1,55 @@
+# =========================================================================
+# 1. DEPENDENCIES & PACKAGES (Frontend & Backend)
+# =========================================================================
+# Blocks heavy Node modules in frontend, backend, or any other directory
+**/node_modules/
+**/bower_components/
+
+# =========================================================================
+# 2. MACHINE LEARNING & PYTHON (ml-backend)
+# =========================================================================
+# Ignore Python virtual environments
+**/venv/
+**/.venv/
+**/env/
+**/bin/
+**/Include/
+**/Lib/
+
+# Ignore compiled Python byte-code
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore large datasets and ML models (Prevents GitHub push failures)
+**/data/*.csv
+**/data/*.json
+**/data/*.h5
+*.pkl
+*.h5
+*.onnx
+*.pt
+*.pth
+
+# Jupyter Notebook checkpoints
+**/.ipynb_checkpoints/
+
+# =========================================================================
+# 3. ENVIRONMENT VARIABLES & SECRETS (Crucial for Security!)
+# =========================================================================
+# Never upload API keys, passwords, or database credentials
+**/.env
+**/.env.local
+**/.env.*.local
+**/config.json
+
+# =========================================================================
+# 4. SYSTEM JUNK & LOGS
+# =========================================================================
+# OS generated files
+**/.DS_Store
+**/Thumbs.db
+
+# Log files
+*.log
+**/logs/
